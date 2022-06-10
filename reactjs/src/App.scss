@@ -1,0 +1,229 @@
+body {
+  font-family: "Rubik";
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.ol-zoom {
+  top: 4em !important;
+}
+
+.main-searchbox .MuiFilledInput-root {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.main-searchbox .MuiInputAdornment-root {
+  margin-top: 6px !important;
+}
+
+.main-searchbox .MuiInputBase-input {
+  padding-top: 10px !important;
+}
+
+.carousel-photo {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.mainview {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  touch-action: none;
+}
+
+.App-mainfilterbutton {
+  justify-content: flex-start !important;
+}
+
+@media (min-width: 800px) {
+  .App-maintoolbar {
+    width: 600px;
+  }
+  .face-detail {
+    width: 600px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .App-maintoolbar {
+    width: 80%;
+  }
+  .face-detail {
+    width: 100% !important;
+  }
+  .MuiTableCell-root {
+    padding: 10px !important;
+  }
+}
+
+.checkout-form .MuiFormControl-root {
+  & .MuiFormLabel-asterisk.MuiInputLabel-asterisk {
+    &::after {
+      content: "*";
+    }
+  }
+}
+
+.layoutRoot {
+  display: flex;
+  background: #eee;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.absoluteLayout {
+  height: 600px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselActiveIndicator {
+  svg {
+    font-size: 25px;
+  }
+}
+
+.carouselIndicator {
+  padding: 0 2px;
+  opacity: 0.7;
+}
+
+.table-button {
+  padding: 6px 4px !important;
+  min-width: 32px !important;
+}
+
+.checkout {
+  background-color: #0288D1;
+  color: white;
+}
+
+.face-detail {
+  position: absolute;
+  left: 50% !important;
+  top: unset !important;
+  bottom: 0px;
+  transform: translateX(-50%);
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+}
+
+.face-address {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.face-params {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #666666;
+}
+
+.face-detail-resize {
+  margin: 3px 0;
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #333333;
+  opacity: 0.4;
+  cursor: ns-resize;
+  z-index: 1;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 20px 20px 0px 0px;
+  text-align: center;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 2px 2px 8px 0 rgb(0 0 0 / 40%);
+}
+
+.absolutely-positioned {
+  position: absolute !important;
+}
+
+.bottom-aligned {
+  bottom: 0;
+}
+
+.custom-handle-n,
+.custom-handle-s {
+  left: 50%;
+  margin-left: -25px;
+  cursor: ns-resize;
+}
+
+.custom-handle-n {
+  top: 5px;
+}
+
+.App-maintoolbar {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  background-color: transparent;
+}
+
+.App-searchbox {
+  width: 100%;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
